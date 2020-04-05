@@ -1,6 +1,7 @@
 import pymongo, csv, re
 
 def read_data(csv_file, db):
+    
     with open(csv_file, encoding='utf8') as csvfile:
         reader = csv.reader(csvfile)
         artists_list = list(reader)
